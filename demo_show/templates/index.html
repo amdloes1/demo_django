@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    
+</head>
+<body>
+      
+    <h1>{{ Myheading }}</h1>
+    <p class="username">{{web_here}}</p>
+    <h2>{{kidsPictures}}</h2>
+    <p>Hello, {{Guest}}</p>
+    <img src="% static/pic1.jpg%" alt="Example Image">
+    <form method="post">
+        
+        <input type="text" name="uname" placeholder="Name Please"><br>
+        <input type="number" age="age " placeholder="Age of your kid"><br>
+        <input type="city" city="city" placeholder="Where do you live(City)"><br>
+        <input type="file" id="myFile" name="filename"><br>
+
+        <input type="submit" value="submit">
+        </form>
+    <a href="mailto:sakamoshi0008@gmail.com"> Email me</a><br>
+    <a href="https://google.com" target="_blank">Google Search</a>
+</body>
+</html>
